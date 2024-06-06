@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this CSS to your <head> section or external CSS file */
+
+    /* Slow down the transition effect */
+    .transition-slow {
+        transition-duration: 5s;
+    }
+
