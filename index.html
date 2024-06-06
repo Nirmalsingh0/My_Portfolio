@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../CodeCrafters.png">
+
+    <title>CodeCrafters</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+<link href="../src/css/tailwind.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-gray-900 text-white py-4 transition-slow">
+  <div class="container mx-auto px-4">
+    <nav class="flex flex-wrap items-center justify-between transition-slow">
+      <a href="#" class="text-2xl font-bold mr-4"> @self_taughtDev</a>
+      <button class="text-white focus:outline-none md:hidden" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 mt-4 md:mt-0 w-full md:w-auto hidden" id="mobile-menu">
+        <li><a href="#hero" class="text-white transition duration-500 ease-in-out">Home</a></li>
+        <li><a href="#abt" class="text-white transition duration-500 ease-in-out">About</a></li>
+        <li><a href="#ser" class="text-white transition duration-500 ease-in-out">Services</a></li>
+        <li><a href="#proj" class="text-white transition duration-500 ease-in-out">Projects</a></li>
+        <li><a href="#cont" class="text-white">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+
+
+<!-- Hero Section -->
+<section id="hero" class="bg-cover bg-center py-20" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60');">
+  <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-white">Need a Website? | </h1><h1 class="text-xl font-bold text-blue-400"> Lets Chit-Chat!</h1>
+       </h1>
+      <p class="text-xl text-white mt-4">I am a web developer passionate about creating amazing websites.</p>
+      <a href="#contact" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Contact Me</a>
+  </div>
+</section>
+
+<!-- Hero Section -->
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+      <div class="text-center">
+          <h1 class="text-4xl font-bold">Welcome to CodeCrafters</h1>
+          <p class="mt-4 text-gray-600">Showcasing My projects and offering services</p>
+      </div>
+  </div>
+</section>
+
+
+<!-- About Me Section -->
+
+<section id="abt" class="py-16 bg-gray-900 text-white">
+  <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+              <img src="../src/img/mine.jpg" alt="Profile Picture" class="rounded-lg h-38 w-48">
+          </div>
+          <div>
+              <h3 class="text-xl font-bold text-blue-400">Hi, I'm Nirmal Singh</h3>
+              <p class="mt-4">I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating visually stunning and user-friendly websites that leave a lasting impression.</p>
+              <p class="mt-4">I have experience working with various web development frameworks and libraries, and I am constantly learning and adapting to new technologies.</p>
+              <p class="mt-4">In my free time, I enjoy exploring new coding techniques and contributing to open-source projects. I am always up for new challenges and opportunities to expand my skill set.</p>
+              <a href="#cont" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Contact Me</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<style>
+.container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+
+<!-- Services Section -->
+<section id="ser" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold">Services</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+            <li class="bg-white shadow p-6">
+                <h3 class="text-xl font-bold">Website Design</h3>
+                <p class="mt-2"> I offer professional web design services to create visually appealing and user-friendly websites. I believe in creating designs that are not only aesthetically pleasing but also functional and optimized for performance.</p>
+            </li>
+            <li class="bg-white shadow p-6">
+                <h3 class="text-xl font-bold">Frontend Development</h3>
+                <p class="mt-2">With my expertise in HTML, CSS, and JavaScript, I provide front-end development services to bring designs to life. I focus on clean and maintainable code, ensuring cross-browser compatibility and responsive layouts.</p>
+            </li>
+            <li class="bg-white shadow p-6">
+                <h3 class="text-xl font-bold">Responsive Design</h3>
+                <p class="mt-2">I offer website maintenance services to ensure your website is up-to-date, secure, and running smoothly. From regular updates to monitoring performance and resolving issues, I provide comprehensive maintenance solutions.</p>
+            </li>
+        </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="proj" class="py-16">
+  <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <div class="bg-white shadow p-6">
+          <img src="../src/img/Moulilogo2.jpg.png" alt="Skill 1" class="h-18 w-18 mx-auto mb-2">
+          <h3 class="text-lg font-bold">Mouli Enterprises</h3>
+          <p class="mt-2">An Individual Enterprise Website. </p>
+
+          <a href="https://moulient.com/" target="_blank" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Project</a>
+        </div>
+        
+          <div class="bg-white shadow p-6">
+            <img src="../CodeCrafters.png" alt="Skill 1" class="h-18 w-18 mx-auto mb-2">
+          
+            <h3 class="text-xl font-bold">CodeCrafters
+            </h3>
+              <p class="mt-2">My Own Website.</p>
+              <a href="../index.html" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Project</a>
+          </div>
+        
+      </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="bg-gray-900 text-white py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold">Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+      <li class="bg-gray-800 shadow p-4">
+        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="Skill 1" class="h-18 w-18 mx-auto mb-2">
+        <h3 class="text-lg font-bold text-blue-500">HTML</h3>
+      </li>
+      <li class="bg-gray-800 shadow p-4">
+        <img src="https://images.unsplash.com/photo-1634634465913-5bb5600942f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y3NzfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60" alt="Skill 2" class="h-18 w-18 mx-auto mb-2">
+        <h3 class="text-lg font-bold text-green-500">CSS And Frameworks</h3>
+      </li>
+      <li class="bg-gray-800 shadow p-4">
+        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="Skill 3" class="h-18 w-18 mx-auto mb-2">
+        <h3 class="text-lg font-bold text-yellow-500">JavaScript and Frameworks</h3>
+      </li>
+      <li class="bg-gray-800 shadow p-4">
+        <img src="https://images.unsplash.com/photo-1535551951406-a19828b0a76b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UEhQfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60" alt="Skill 4" class="h-18 w-18 mx-auto mb-2">
+        <h3 class="text-lg font-bold text-red-500">PHP</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- Testimonials Section -->
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold">Testimonials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+          <div class="bg-white shadow p-6">
+              <p class="text-lg">"The web developer showcased exceptional skills and expertise throughout the entire project. They were responsive, collaborative, and delivered the final product on time. I am delighted with the outcome and will definitely work with them again."</p>
+              <p class="mt-4 font-bold">Ashok Kumar Prasad</p>
+          </div>
+          <div class="bg-white shadow p-6">
+              <p class="text-lg">"Working with this web developer was a fantastic experience. They have a deep understanding of web development technologies and created a stunning website for our business. Highly recommended!"</p>
+              <p class="mt-4 font-bold">Prince Singh</p>
+          </div>
+          <div class="bg-white shadow p-6">
+              <p class="text-lg">"I am extremely impressed with the quality of work delivered by this web developer. They were able to bring my vision to life and exceeded my expectations. The attention to detail and professionalism are top-notch!"</p>
+              <p class="mt-4 font-bold">Abhishek Vishwakarma</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="cont" class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-bold">Connect with me</h2>
+        <p class="mt-4">I'm just one call away!</p>
+        <div class="mt-6">
+          <h3 class="text-xl font-bold">Email</h3>
+          <p>Micronirm@Outlook.com</p>
+        </div>
+        <div class="mt-6">
+          <h3 class="text-xl font-bold">Phone</h3>
+          <p>+91 6266-431-063</p>
+        </div>
+        <div class="mt-6">
+          <h3 class="text-xl font-bold">Address</h3>
+          <p>Bhilai, Durg Chhattisgarh</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 mt-6 md:mt-0">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezdmJ45UeOb4LCINcrqgXUY1zz0HRPOR6x8xJo4VIo15xrWw/viewform?embedded=true" width="100%" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-4">
+  <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2023 CodeCrafters. All rights reserved.</p>
+  </div>
+</footer>
+
+  </body>
+  </html>
